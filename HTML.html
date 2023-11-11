@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+    <title>ChatMonk - Video Chat</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="logo.png" alt="ChatMonk Logo">
+            <h1>ChatMonk</h1>
+        </header>
+        <div id="video-container">
+            <video id="local-video" autoplay muted></video>
+            <video id="remote-video" autoplay></video>
+        </div>
+        <div id="controls">
+            <button id="start-btn"><i class="fas fa-video"></i> Start Video</button>
+            <button id="stop-btn"><i class="fas fa-video-slash"></i> Stop Video</button>
+            <button id="start-mic-btn"><i class="fas fa-microphone"></i> Start Mic</button>
+            <button id="stop-mic-btn"><i class="fas fa-microphone-slash"></i> Stop Mic</button>
+            <button id="random-match-btn"><i class="fas fa-random"></i> Random Match</button>
+            <input type="text" id="chat-input" placeholder="Type here...">
+            <button id="send-btn"><i class="fas fa-paper-plane"></i> Send</button>
+            <button id="camera-settings-btn"><i class="fas fa-camera"></i> Camera Settings</button>
+            <button id="mic-settings-btn"><i class="fas fa-microphone-alt"></i> Mic Settings</button>
+            <button id="privacy-policy-btn"><i class="fas fa-lock"></i> Privacy Policy</button>
+            <button id="terms-conditions-btn"><i class="fas fa-file-alt"></i> Terms and Conditions</button>
+            <button id="about-us-btn"><i class="fas fa-info-circle"></i> About Us</button>
+        </div>
+        <div id="chat">
+            <ul id="chat-messages"></ul>
+        </div>
+    </div>
+    
+    <div id="privacy-policy-modal" class="modal">
+        <div class="modal-content">
+            <!-- Replace this with your actual Privacy Policy content -->
+            <span class="close">&times;</span>
+            <h2>Privacy Policy</h2>
+            <p>Your Privacy Policy content goes here.</p>
+        </div>
+    </div>
+
+    <div id="terms-conditions-modal" class="modal">
+        <div class="modal-content">
+            <!-- Replace this with your actual Terms and Conditions content -->
+            <span class="close">&times;</span>
+            <h2>Terms and Conditions</h2>
+            <p>Your Terms and Conditions content goes here.</p>
+        </div>
+    </div>
+
+    <div id="about-us-modal" class="modal">
+        <div class="modal-content">
+            <!-- Replace this with your "About Us" content -->
+            <span class="close">&times;</span>
+            <h2>About Us</h2>
+            <p>Welcome to ChatMonk - Your go-to video chat app for connecting with friends and making new connections. Our mission is to provide a safe and enjoyable environment for users to engage in meaningful conversations.</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
